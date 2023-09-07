@@ -11,13 +11,9 @@ const searchWeather= async(weatherCity)=> {
           'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com'
         }
       };
-      
-      try {
+     
           const response = await axios.get(options);
           return response;
-      } catch (error) {
-          console.error(error);
-      }
 };
 
  export {searchWeather}
