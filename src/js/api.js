@@ -13,7 +13,7 @@ const searchWeather= async(weatherCity)=> {
       };
       
       try {
-          const response = await axios.request(options);
+          const response = await axios.get(options);
           return response;
       } catch (error) {
           console.error(error);
